@@ -2,7 +2,7 @@ import { FastifyInstance } from 'fastify';
 import pino from 'pino';
 
 import build from '../src/application/application';
-import { HOST, LOGGER_LEVEL, PORT} from '../src/config';
+import { HOST, LOGGER_LEVEL } from '../src/config';
 
 describe('server test', () => {
   let fastify:FastifyInstance;
@@ -10,7 +10,7 @@ describe('server test', () => {
   beforeAll(async () => {
     fastify = build({ logger: pino({ level: LOGGER_LEVEL }) });
     await fastify.ready();
-    await fastify.listen(PORT, HOST);
+    await fastify.listen(3333, HOST);
   });
 
   afterAll(() => {

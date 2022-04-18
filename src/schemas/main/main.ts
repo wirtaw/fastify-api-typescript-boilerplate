@@ -1,13 +1,8 @@
-import {
-    RouteShorthandOptions
-} from 'fastify';
-
-export const indexPageOpt: RouteShorthandOptions = {
-    schema: {
-        response: {
-            200: {
-                type: 'string',
-            }
+export const indexPageOpt = {
+    response: {
+        200: {
+            type: 'string',
         }
-    }
+    },
+    tags: ['index']
 };

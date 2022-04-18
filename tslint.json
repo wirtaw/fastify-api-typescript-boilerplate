@@ -13,7 +13,8 @@
     "function-name": [false],
     "no-unused-expression": [false],
     "ter-indent": [false],
-    "brace-style": [false]
+    "brace-style": [false],
+    "object-curly-spacing": [false]
   },
   "rulesDirectory": []
 }
