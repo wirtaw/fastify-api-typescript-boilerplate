@@ -1,11 +1,11 @@
-import application from './application/application';
+import build from './application/application';
 
 import pino from 'pino';
 import { HOST, LOGGER_LEVEL, PORT} from './config';
 
-const start = async () => {
+export const start = async () => {
     try {
-        const app = application({
+        const app = build({
             logger: pino({ level: LOGGER_LEVEL })
         });
 
