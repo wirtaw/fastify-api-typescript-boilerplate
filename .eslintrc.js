@@ -12,7 +12,7 @@ module.exports = {
   rules: {
     'no-var': 'error',
     semi: 'error',
-    indent: ['error', 2, { SwitchCase: 1 }],
+    indent: [true, 2, { SwitchCase: 1, "StaticBlock": { "body": 2 }, "ObjectExpression": 1 }],
     'no-multi-spaces': 'error',
     'space-in-parens': 'error',
     'no-multiple-empty-lines': 'error',

@@ -13,13 +13,18 @@ This configuration let create Fastify API with TypeScript.
 ## Installation 
 
 - Run `npm ci`
-- Create `.env` or copy from `.env.example`
+- Create `.env.development` or copy from `.env.example`
+- Change env variables
 
 ## Usage
 
 ### Dev
 
 Run `npm run start:watch`
+
+### Production
+
+Run `npm run start`
 
 ### Build 
 
