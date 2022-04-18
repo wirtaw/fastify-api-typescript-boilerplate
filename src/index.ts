@@ -1,12 +1,15 @@
 import application from './application/application';
 
-import configs from './config';
+import pino from 'pino';
+import { HOST, LOGGER_LEVEL, PORT} from './config';
 
 const start = async () => {
     try {
-        const app = application();
+        const app = application({
+            logger: pino({ level: LOGGER_LEVEL })
+        });
 
-        await app.listen(configs.main.port, configs.main.host);
+        await app.listen(PORT, HOST);
     } catch (err) {
         throw new Error(err.message);
     }

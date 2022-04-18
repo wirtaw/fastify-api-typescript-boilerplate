@@ -3,9 +3,6 @@ dotenvFlow.config({
     default_node_env: process.env.NODE_ENV,
 });
 
-export default {
-    main: {
-        host: process.env.HOST || '0.0.0.0',
-        port: Number(process.env.PORT) || 3000,
-    },
-};
+export const HOST = process.env.HOST ? process.env.HOST : '0.0.0.0';
+export const LOGGER_LEVEL = process.env.LOGGER_LEVEL || 'info';
+export const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
