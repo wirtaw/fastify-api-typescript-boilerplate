@@ -18,20 +18,20 @@ const getPing: RouteOptions = {
     url: '/ping',
 };
 
-const getItem: RouteOptions = {
-    handler: getItemController,
-    method: 'GET',
-    schema: getItemOpt,
-    url: '/items/_:id',
-};
-
 const getAllItems: RouteOptions = {
     handler: getAllController,
     method: 'GET',
     schema: getAllItemOpt,
-    url: '/items',
+    url: '/api/items',
 };
 
-const routes = [getIndex, getPing, getItem, getAllItems];
+const getItem: RouteOptions = {
+    handler: getItemController,
+    method: 'GET',
+    schema: getItemOpt,
+    url: '/api/items/:_id',
+};
+
+const routes = [getIndex, getPing, getAllItems, getItem];
 
 export default routes;
