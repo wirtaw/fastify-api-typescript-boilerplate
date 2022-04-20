@@ -16,7 +16,6 @@ import { Items } from './mock';
 
 export const getItemController = async (_request: any, reply: FastifyReply)
     : Promise<ResponseBody> => {
-    console.dir(Items, {depth: 2});
     const ID = (_request?.params?._id) ? _request.params._id : '';
     if (!ID) {
         return reply.code(400)
