@@ -14,3 +14,9 @@ export const NotFoundSchema = Type.Object({
     message: Type.String(),
     statusCode: Type.Integer()
 });
+
+export interface NotFoundResponse {
+    error: string;
+    message: string;
+    statusCode: number
+}

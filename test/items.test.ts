@@ -3,6 +3,7 @@ import pino from 'pino';
 
 import build from '../src/application/application';
 import { HOST, LOGGER_LEVEL} from '../src/config';
+import { NotFoundResponse } from '../src/schemas/item/NotFound';
 
 describe('API items route test', () => {
     let fastify:FastifyInstance;
@@ -31,14 +32,36 @@ describe('API items route test', () => {
             const res = await fastify.inject({
                 url: '/api/items/1',
             });
+            const body: NotFoundResponse = (typeof res.body === 'string') ? JSON.parse(res.body): res.body;
             expect(res.statusCode).toEqual(400);
+            expect(body.message).toEqual('no item');
+            expect(body.error).toEqual('');
         });
 
         test('failed status 400 - empty', async () => {
             const res = await fastify.inject({
                 url: '/api/items/',
             });
+            const body: NotFoundResponse = (typeof res.body === 'string') ? JSON.parse(res.body): res.body;
             expect(res.statusCode).toEqual(400);
+            expect(body.message).toEqual('bad ID');
+            expect(body.error).toEqual('');
+        });
+
+        test('failed status 404 - PUT not found', async () => {
+            const res = await fastify.inject({
+                url: '/api/items/',
+                method: 'PUT'
+            });
+            expect(res.statusCode).toEqual(404);
+        });
+
+        test('failed status 404 - DELETE not found', async () => {
+            const res = await fastify.inject({
+                url: '/api/items/',
+                method: 'DELETE'
+            });
+            expect(res.statusCode).toEqual(404);
         });
 
         test('failed status 200 - find', async () => {
