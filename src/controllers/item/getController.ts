@@ -22,7 +22,7 @@ type ResponseBody = Static<typeof responseSchema['200'] | typeof responseSchema[
 
 import { Items } from './mock';
 
-export const getItemController = async (request: Request & Params, reply: FastifyReply)
+export const getItemController = async (request: Request & (Params | undefined) , reply: FastifyReply)
     : Promise<ResponseBody> => {
     const { params } = request;
     let ID = '';

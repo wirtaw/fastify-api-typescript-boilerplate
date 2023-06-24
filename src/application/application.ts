@@ -1,6 +1,6 @@
 import fastify, {FastifyInstance, FastifyLoggerOptions} from 'fastify';
 import fastifyOas from 'fastify-oas';
-import fastifyRoutes from 'fastify-routes';
+import fastifyRoutes from '@fastify/routes';
 import { IncomingMessage, Server, ServerResponse } from 'http';
 
 import { HOST, PORT} from '../config';
