@@ -11,26 +11,22 @@ const responseSchema = {
 };
 
 interface Params {
-    _id: string
-}
-
-export interface Request extends FastifyRequest{
-    params: Params | undefined
+    _id?: string
 }
 
 type ResponseBody = Static<typeof responseSchema['200'] | typeof responseSchema['400']>;
 
 import { Items } from './mock';
 
-export const getItemController = async (request: Request & (Params | undefined) , reply: FastifyReply)
+export const getItemController = async (request: FastifyRequest & Params, reply: FastifyReply)
     : Promise<ResponseBody> => {
-    const { params } = request;
+    const params = request?.params || { _id: undefined };
     let ID = '';
     if (!params) {
         return reply.code(400)
             .send({message: 'no params', statusCode: 400, error: ''});
     }
-    ID = (params?._id) ? params._id : '';
+    ID = (params && params?._id) ? params._id : '';
     if (!ID) {
         return reply.code(400)
             .send({message: 'bad ID', statusCode: 400, error: ''});
