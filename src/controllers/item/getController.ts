@@ -1,6 +1,6 @@
 import { Static } from '@sinclair/typebox';
 import {
-    FastifyReply, FastifyRequest
+    FastifyReply, FastifyRequest, RouteHandlerMethod
 } from 'fastify';
 import { IItem, ItemSchema } from '../../schemas/item/Item';
 import { NotFoundSchema } from '../../schemas/item/NotFound';
@@ -10,23 +10,26 @@ const responseSchema = {
     400: NotFoundSchema
 };
 
-interface Params {
-    _id?: string
+interface CustomItemRequest extends FastifyRequest {
+  params: {
+    _id: string;
+  };
 }
 
 type ResponseBody = Static<typeof responseSchema['200'] | typeof responseSchema['400']>;
 
 import { Items } from './mock';
 
-export const getItemController = async (request: FastifyRequest & Params, reply: FastifyReply)
+export const getItemController = async(request: CustomItemRequest, reply: FastifyReply)
     : Promise<ResponseBody> => {
-    const params = request?.params || { _id: undefined };
-    let ID = '';
+    const params = request.params;
+
     if (!params) {
         return reply.code(400)
             .send({message: 'no params', statusCode: 400, error: ''});
     }
-    ID = (params && params?._id) ? params._id : '';
+
+    const ID = params._id || '';
     if (!ID) {
         return reply.code(400)
             .send({message: 'bad ID', statusCode: 400, error: ''});

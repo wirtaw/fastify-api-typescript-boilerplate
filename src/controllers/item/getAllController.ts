@@ -12,7 +12,7 @@ type ResponseBody = Static<typeof responseSchema['200']>;
 
 import { Items } from './mock';
 
-export const getAllController = async (_request: FastifyRequest, reply: FastifyReply)
+export const getAllController = async(_request: FastifyRequest, reply: FastifyReply)
     : Promise<ResponseBody> => {
     return reply.code(200).send(Items);
 };

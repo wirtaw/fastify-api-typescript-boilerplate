@@ -18,5 +18,5 @@ export const NotFoundSchema = Type.Object({
 export interface NotFoundResponse {
     error: string;
     message: string;
-    statusCode: number
+    statusCode: number;
 }
