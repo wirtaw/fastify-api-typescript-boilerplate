@@ -2,7 +2,7 @@ repo_name: wirtaw/fastify-api-typescript-boilerplate
 report_id: 689502340cd1ec6091956f3696e0d599
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:50:26+00:00'
+timestamp: '2024-02-29T18:39:04+00:00'
 requested_by: wirtaw
 provider: github
 branch: master
@@ -94,7 +94,7 @@ tools:
   last_updated_by: Poplavskij Vladimir
   last_updated_on: 2022-04-17 06:36:59.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.8.8
   license: MIT
