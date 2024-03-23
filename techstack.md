@@ -168,10 +168,10 @@ Full tech stack [here](/techstack.md)
 |[pino](https://www.npmjs.com/pino)|v6.14.0|06/24/23|Vladimir Poplavskij |MIT|N/A|
 |[ts-jest](https://www.npmjs.com/ts-jest)|v27.1.5|06/24/23|Vladimir Poplavskij |MIT|N/A|
 |[ts-node](https://www.npmjs.com/ts-node)|v10.9.1|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[tslint-config-airbnb](https://www.npmjs.com/tslint-config-airbnb)|v5.11.2|10/08/23|Vladimir Poplavskij |Apache-2.0|N/A|
 |[tslint-config-prettier](https://www.npmjs.com/tslint-config-prettier)|v1.18.0|10/08/23|Vladimir Poplavskij |MIT|N/A|
 
 <br/>
 <div align='center'>
 
 Generated via [Stack File](https://github.com/marketplace/stack-file)
+</div>

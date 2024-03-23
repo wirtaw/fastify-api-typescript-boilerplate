@@ -2,316 +2,306 @@ repo_name: wirtaw/fastify-api-typescript-boilerplate
 report_id: 689502340cd1ec6091956f3696e0d599
 version: 0.1
 repo_type: Public
-timestamp: '2024-02-29T18:39:04+00:00'
+timestamp: "2024-02-29T18:39:04+00:00"
 requested_by: wirtaw
 provider: github
 branch: master
 detected_tools_count: 23
 tools:
-- name: JavaScript
-  description: Lightweight, interpreted, object-oriented language with first-class
-    functions
-  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-  open_source: true
-  hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Languages
-  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate
-  detection_source: Repo Metadata
-- name: TypeScript
-  description: A superset of JavaScript that compiles to clean JavaScript output
-  website_url: http://www.typescriptlang.org
-  license: Apache-2.0
-  open_source: true
-  hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Languages
-  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate
-  detection_source: Repo Metadata
-- name: Fastify
-  description: Fast and low overhead web framework, for Node.js
-  website_url: http://www.fastify.io/
-  version: 3.29.5
-  open_source: true
-  hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Microframeworks (Backend)
-  image_url: https://img.stackshare.io/service/7609/24939410.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: Node.js
-  description: A platform built on Chrome's JavaScript runtime for easily building
-    fast, scalable network applications
-  website_url: http://nodejs.org/
-  open_source: true
-  hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Frameworks (Full Stack)
-  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
-  detection_source: package.json
-  last_updated_by: Poplavskij Vladimir
-  last_updated_on: 2022-04-17 06:36:59.000000000 Z
-- name: ESLint
-  description: The fully pluggable JavaScript code quality tool
-  website_url: http://eslint.org/
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Build, Test, Deploy
-  sub_category: Code Review
-  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
-  detection_source: package.json
-  last_updated_by: Poplavskij Vladimir
-  last_updated_on: 2022-04-17 06:36:59.000000000 Z
-- name: Git
-  description: Fast, scalable, distributed revision control system
-  website_url: http://git-scm.com/
-  open_source: true
-  hosted_saas: false
-  category: Build, Test, Deploy
-  sub_category: Version Control System
-  image_url: https://img.stackshare.io/service/1046/git.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate
-  detection_source: Repo Metadata
-- name: Jest
-  description: Painless JavaScript Unit Testing
-  website_url: http://facebook.github.io/jest/
-  version: 27.5.1
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Build, Test, Deploy
-  sub_category: Javascript Testing Framework
-  image_url: https://img.stackshare.io/service/830/jest.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Poplavskij Vladimir
-  last_updated_on: 2022-04-17 06:36:59.000000000 Z
-- name: Prettier
-  description: Prettier is an opinionated code formatter.
-  website_url: https://prettier.io/
-  version: 2.8.8
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Build, Test, Deploy
-  sub_category: Code Review
-  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: TSLint
-  description: An extensible linter for the TypeScript language
-  website_url: https://github.com/palantir/tslint
-  open_source: false
-  hosted_saas: false
-  category: Build, Test, Deploy
-  sub_category: Code Review
-  image_url: https://img.stackshare.io/service/5561/303157.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
-  detection_source: package.json
-  last_updated_by: Poplavskij Vladimir
-  last_updated_on: 2022-04-17 06:36:59.000000000 Z
-- name: nodemon
-  description: A simple monitor script for use during development of a node.js app
-  website_url: http://nodemon.io/
-  version: 2.0.22
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Monitoring
-  sub_category: node.js Application Monitoring
-  image_url: https://img.stackshare.io/service/5577/preview.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: npm
-  description: The package manager for JavaScript.
-  website_url: https://www.npmjs.com/
-  open_source: false
-  hosted_saas: false
-  category: Build, Test, Deploy
-  sub_category: Front End Package Manager
-  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
-  detection_source: package.json
-  last_updated_by: Poplavskij Vladimir
-  last_updated_on: 2022-04-17 06:36:59.000000000 Z
-- name: "@types/jest"
-  description: TypeScript definitions for Jest
-  package_url: https://www.npmjs.com/@types/jest
-  version: 27.5.2
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: "@types/node"
-  description: TypeScript definitions for Node.js
-  package_url: https://www.npmjs.com/@types/node
-  version: 17.0.45
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: "@types/pino"
-  description: TypeScript definitions for pino
-  package_url: https://www.npmjs.com/@types/pino
-  version: 7.0.5
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/18749/default_1f93b00a0aa6ebc30a3a7957359f1ee2067b51e1.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: "@typescript-eslint/eslint-plugin"
-  description: TypeScript plugin for ESLint
-  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
-  version: 5.62.0
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: "@typescript-eslint/parser"
-  description: An ESLint custom parser which leverages TypeScript ESTree
-  package_url: https://www.npmjs.com/@typescript-eslint/parser
-  version: 5.62.0
-  license: BSD-2-Clause
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: eslint-config-prettier
-  description: Turns off all rules that are unnecessary or might conflict with Prettier
-  package_url: https://www.npmjs.com/eslint-config-prettier
-  version: 8.10.0
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: eslint-plugin-prettier
-  description: Runs prettier as an eslint rule
-  package_url: https://www.npmjs.com/eslint-plugin-prettier
-  version: 4.2.1
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: pino
-  description: Super fast, all natural json logger
-  package_url: https://www.npmjs.com/pino
-  version: 6.14.0
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16974/default_192373fe2b3ded7bb442c39dbf0f34ca3e5bed5d.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-06-24 10:38:30.000000000 Z
-- name: ts-jest
-  description: A preprocessor with source maps support to help use TypeScript with
-    Jest
-  package_url: https://www.npmjs.com/ts-jest
-  version: 27.1.5
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15864/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-06-24 10:38:30.000000000 Z
-- name: ts-node
-  description: TypeScript execution environment and REPL for node.js
-  package_url: https://www.npmjs.com/ts-node
-  version: 10.9.1
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: tslint-config-airbnb
-  description: A TSLint config for Airbnb JavaScript Style
-  package_url: https://www.npmjs.com/tslint-config-airbnb
-  version: 5.11.2
-  license: Apache-2.0
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16394/default_92302d1bbf4c0f67b862869662b4f69002c94aad.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
-- name: tslint-config-prettier
-  description: Do you wanna use tslint and prettier without conflicts? tslint-config-prettier
-    disables all conflicting rules that may cause such problems
-  package_url: https://www.npmjs.com/tslint-config-prettier
-  version: 1.18.0
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16083/default_d947c1690e032a288145c7e2491999eab3ea8ede.png
-  detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
-  detection_source: package.json
-  last_updated_by: Vladimir Poplavskij
-  last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: JavaScript
+    description:
+      Lightweight, interpreted, object-oriented language with first-class
+      functions
+    website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    open_source: true
+    hosted_saas: false
+    category: Languages & Frameworks
+    sub_category: Languages
+    image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate
+    detection_source: Repo Metadata
+  - name: TypeScript
+    description: A superset of JavaScript that compiles to clean JavaScript output
+    website_url: http://www.typescriptlang.org
+    license: Apache-2.0
+    open_source: true
+    hosted_saas: false
+    category: Languages & Frameworks
+    sub_category: Languages
+    image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate
+    detection_source: Repo Metadata
+  - name: Fastify
+    description: Fast and low overhead web framework, for Node.js
+    website_url: http://www.fastify.io/
+    version: 3.29.5
+    open_source: true
+    hosted_saas: false
+    category: Languages & Frameworks
+    sub_category: Microframeworks (Backend)
+    image_url: https://img.stackshare.io/service/7609/24939410.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: Node.js
+    description:
+      A platform built on Chrome's JavaScript runtime for easily building
+      fast, scalable network applications
+    website_url: http://nodejs.org/
+    open_source: true
+    hosted_saas: false
+    category: Languages & Frameworks
+    sub_category: Frameworks (Full Stack)
+    image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
+    detection_source: package.json
+    last_updated_by: Poplavskij Vladimir
+    last_updated_on: 2022-04-17 06:36:59.000000000 Z
+  - name: ESLint
+    description: The fully pluggable JavaScript code quality tool
+    website_url: http://eslint.org/
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Build, Test, Deploy
+    sub_category: Code Review
+    image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
+    detection_source: package.json
+    last_updated_by: Poplavskij Vladimir
+    last_updated_on: 2022-04-17 06:36:59.000000000 Z
+  - name: Git
+    description: Fast, scalable, distributed revision control system
+    website_url: http://git-scm.com/
+    open_source: true
+    hosted_saas: false
+    category: Build, Test, Deploy
+    sub_category: Version Control System
+    image_url: https://img.stackshare.io/service/1046/git.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate
+    detection_source: Repo Metadata
+  - name: Jest
+    description: Painless JavaScript Unit Testing
+    website_url: http://facebook.github.io/jest/
+    version: 27.5.1
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Build, Test, Deploy
+    sub_category: Javascript Testing Framework
+    image_url: https://img.stackshare.io/service/830/jest.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Poplavskij Vladimir
+    last_updated_on: 2022-04-17 06:36:59.000000000 Z
+  - name: Prettier
+    description: Prettier is an opinionated code formatter.
+    website_url: https://prettier.io/
+    version: 2.8.8
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Build, Test, Deploy
+    sub_category: Code Review
+    image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: TSLint
+    description: An extensible linter for the TypeScript language
+    website_url: https://github.com/palantir/tslint
+    open_source: false
+    hosted_saas: false
+    category: Build, Test, Deploy
+    sub_category: Code Review
+    image_url: https://img.stackshare.io/service/5561/303157.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
+    detection_source: package.json
+    last_updated_by: Poplavskij Vladimir
+    last_updated_on: 2022-04-17 06:36:59.000000000 Z
+  - name: nodemon
+    description: A simple monitor script for use during development of a node.js app
+    website_url: http://nodemon.io/
+    version: 2.0.22
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Monitoring
+    sub_category: node.js Application Monitoring
+    image_url: https://img.stackshare.io/service/5577/preview.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: npm
+    description: The package manager for JavaScript.
+    website_url: https://www.npmjs.com/
+    open_source: false
+    hosted_saas: false
+    category: Build, Test, Deploy
+    sub_category: Front End Package Manager
+    image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package.json
+    detection_source: package.json
+    last_updated_by: Poplavskij Vladimir
+    last_updated_on: 2022-04-17 06:36:59.000000000 Z
+  - name: "@types/jest"
+    description: TypeScript definitions for Jest
+    package_url: https://www.npmjs.com/@types/jest
+    version: 27.5.2
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: "@types/node"
+    description: TypeScript definitions for Node.js
+    package_url: https://www.npmjs.com/@types/node
+    version: 17.0.45
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: "@types/pino"
+    description: TypeScript definitions for pino
+    package_url: https://www.npmjs.com/@types/pino
+    version: 7.0.5
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/18749/default_1f93b00a0aa6ebc30a3a7957359f1ee2067b51e1.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: "@typescript-eslint/eslint-plugin"
+    description: TypeScript plugin for ESLint
+    package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+    version: 5.62.0
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: "@typescript-eslint/parser"
+    description: An ESLint custom parser which leverages TypeScript ESTree
+    package_url: https://www.npmjs.com/@typescript-eslint/parser
+    version: 5.62.0
+    license: BSD-2-Clause
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: eslint-config-prettier
+    description: Turns off all rules that are unnecessary or might conflict with Prettier
+    package_url: https://www.npmjs.com/eslint-config-prettier
+    version: 8.10.0
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: eslint-plugin-prettier
+    description: Runs prettier as an eslint rule
+    package_url: https://www.npmjs.com/eslint-plugin-prettier
+    version: 4.2.1
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: pino
+    description: Super fast, all natural json logger
+    package_url: https://www.npmjs.com/pino
+    version: 6.14.0
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/16974/default_192373fe2b3ded7bb442c39dbf0f34ca3e5bed5d.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-06-24 10:38:30.000000000 Z
+  - name: ts-jest
+    description:
+      A preprocessor with source maps support to help use TypeScript with
+      Jest
+    package_url: https://www.npmjs.com/ts-jest
+    version: 27.1.5
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15864/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-06-24 10:38:30.000000000 Z
+  - name: ts-node
+    description: TypeScript execution environment and REPL for node.js
+    package_url: https://www.npmjs.com/ts-node
+    version: 10.9.1
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
+  - name: tslint-config-prettier
+    description:
+      Do you wanna use tslint and prettier without conflicts? tslint-config-prettier
+      disables all conflicting rules that may cause such problems
+    package_url: https://www.npmjs.com/tslint-config-prettier
+    version: 1.18.0
+    license: MIT
+    open_source: true
+    hosted_saas: false
+    category: Libraries
+    sub_category: npm Packages
+    image_url: https://img.stackshare.io/package/16083/default_d947c1690e032a288145c7e2491999eab3ea8ede.png
+    detection_source_url: https://github.com/wirtaw/fastify-api-typescript-boilerplate/blob/master/package-lock.json
+    detection_source: package.json
+    last_updated_by: Vladimir Poplavskij
+    last_updated_on: 2023-10-08 09:23:34.000000000 Z
