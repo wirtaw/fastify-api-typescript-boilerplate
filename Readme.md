@@ -1,6 +1,10 @@
-# Fastify API + TypeScript Boilerplate
+# Fastify API with TypeScript
 
-This configuration let create Fastify API with TypeScript. 
+This project provides a basic Fastify API built with TypeScript. It includes:
+
+* Type-safe routing and validation
+* Efficient JSON serialization
+* Example endpoints (GET, POST) for demonstration
 
 ## Table of Contents
 
