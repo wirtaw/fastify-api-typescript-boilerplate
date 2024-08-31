@@ -7,7 +7,7 @@ import { HOST, PORT} from '../config';
 
 import routes from '../routes/routes';
 
-function build(opt: { logger: FastifyLoggerOptions }) {
+function build(opt: { logger: {} | FastifyLoggerOptions }) {
     const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify(opt);
 
     server.register(fastifyRoutes);
