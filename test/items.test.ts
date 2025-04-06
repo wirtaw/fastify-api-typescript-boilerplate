@@ -9,9 +9,9 @@ describe('API items route test', () => {
     let fastify:FastifyInstance;
 
     beforeAll(async () => {
-        fastify = build({ logger: pino({ level: LOGGER_LEVEL }) });
+        fastify = await build({ logger: pino({ level: LOGGER_LEVEL }) });
         await fastify.ready();
-        await fastify.listen(3334, HOST);
+        await fastify.listen({ port: 3334, host: HOST });
     });
 
     afterAll(() => {

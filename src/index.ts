@@ -1,17 +1,22 @@
 import build from './application/application';
 
-import pino from 'pino';
-import { HOST, LOGGER_LEVEL, PORT} from './config';
+import { HOST, PORT } from './config';
 
-export const start = async() => {
-    try {
-        const app = build({
-            logger: pino({ level: LOGGER_LEVEL })
-        });
+export const start = async () => {
+  try {
+    const app = await build({});
 
-        await app.listen(PORT, HOST);
-    } catch (err) {
-        throw new Error(err.message);
+    await app.listen({ port: PORT, host: HOST });
+  } catch (err) {
+    let errMessage: string = '';
+
+    if (err && typeof err === 'object' && err !== null && 'message' in err && typeof err.message === 'string') {
+      errMessage = err.message;
+    } else if (err && typeof err === 'string') {
+      errMessage = err;
     }
+
+    throw new Error(errMessage);
+  }
 };
 start();

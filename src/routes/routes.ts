@@ -5,31 +5,31 @@ import { getAllItemOpt, getItemOpt } from '../schemas/item';
 import { indexPageOpt, pingOpt } from '../schemas/main';
 
 const getIndex: RouteOptions = {
-    handler: indexPageController,
-    method: 'GET',
-    schema: indexPageOpt,
-    url: '/',
+  handler: indexPageController,
+  method: 'GET',
+  schema: indexPageOpt,
+  url: '/',
 };
 
 const getPing: RouteOptions = {
-    handler: pingController,
-    method: 'GET',
-    schema: pingOpt,
-    url: '/ping',
+  handler: pingController,
+  method: 'GET',
+  schema: pingOpt,
+  url: '/ping',
 };
 
 const getAllItems: RouteOptions = {
-    handler: getAllController,
-    method: 'GET',
-    schema: getAllItemOpt,
-    url: '/api/items',
+  handler: getAllController,
+  method: 'GET',
+  schema: getAllItemOpt,
+  url: '/api/items',
 };
 
 const getItem: RouteOptions = {
-    handler: getItemController,
-    method: 'GET',
-    schema: getItemOpt,
-    url: '/api/items/:_id',
+  handler: getItemController,
+  method: 'GET',
+  schema: getItemOpt,
+  url: '/api/items/:_id',
 };
 
 const routes = [getIndex, getPing, getAllItems, getItem];

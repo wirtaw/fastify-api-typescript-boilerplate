@@ -1,42 +1,77 @@
-import fastify, {FastifyInstance, FastifyLoggerOptions} from 'fastify';
-import fastifyOas from 'fastify-oas';
-import fastifyRoutes from '@fastify/routes';
-import { IncomingMessage, Server, ServerResponse } from 'http';
+import { IncomingMessage, Server, ServerResponse } from 'node:http';
 
-import { HOST, PORT} from '../config';
+import fastify, {
+  FastifyBaseLogger,
+  FastifyInstance,
+  FastifySchema,
+  FastifyTypeProviderDefault,
+  RouteGenericInterface,
+  RouteOptions,
+} from 'fastify';
+import fastifyRoutes from '@fastify/routes';
+import fastifySwagger from '@fastify/swagger';
+import fastifySwaggerUI from '@fastify/swagger-ui';
+
+import { HOST, PORT, LOGGER_LEVEL } from '../config';
 
 import routes from '../routes/routes';
 
-function build(opt: { logger: {} | FastifyLoggerOptions }) {
-    const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify(opt);
-
-    server.register(fastifyRoutes);
-
-    server.register(fastifyOas, {
-        exposeRoute: true,
-        routePrefix: '/docs',
-        swagger: {
-            externalDocs: {
-                description: 'Find more info here',
-                url: 'https://swagger.io',
-            },
-            host: `${HOST}:${PORT}`,
-            info: {
-                title: 'Fastify API',
-                version: '1.0.0',
-            },
-            schemes: ['http'],
-            tags: [
-                { name: 'index', description: 'Main page' },
-                { name: 'items', description: 'Items' },
-            ],
+async function build(opt: {}) {
+  const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({
+    ...opt,
+    logger: {
+      level: LOGGER_LEVEL,
+      transport: {
+        options: {
+          ignore: 'pid,hostname',
+          translateTime: 'SYS:standard',
         },
-    });
+        target: 'pino-pretty',
+      },
+    },
+  });
 
-    routes.forEach((route) => {
-        server.route(route);
-    });
-    return server;
+  await server.register(fastifySwagger, {
+    swagger: {
+      info: {
+        title: 'Fastify API',
+        description: 'Testing the Fastify swagger API',
+        version: '0.1.0',
+      },
+      externalDocs: {
+        url: 'https://swagger.io',
+        description: 'Find more info here',
+      },
+      host: `${HOST}:${PORT}`,
+      schemes: ['http'],
+      consumes: ['application/json'],
+      produces: ['application/json'],
+    },
+  });
+
+  await server.register(fastifySwaggerUI, {
+    routePrefix: '/documentation',
+  });
+
+  server.register(fastifyRoutes);
+
+  routes.forEach(
+    (
+      route: RouteOptions<
+        Server<typeof IncomingMessage, typeof ServerResponse>,
+        IncomingMessage,
+        ServerResponse<IncomingMessage>,
+        RouteGenericInterface,
+        unknown,
+        FastifySchema,
+        FastifyTypeProviderDefault,
+        FastifyBaseLogger
+      >,
+    ) => {
+      server.route(route);
+    },
+  );
+  return server;
 }
 
 export default build;

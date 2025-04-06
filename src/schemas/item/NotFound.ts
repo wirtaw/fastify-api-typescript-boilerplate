@@ -1,22 +1,22 @@
 import { Type } from '@sinclair/typebox';
 
 export const NotFound = {
-    properties: {
-        error: { type: 'string' },
-        message: { type: 'string' },
-        statusCode: { type: 'integer' },
-    },
-    type: 'object',
+  properties: {
+    error: { type: 'string' },
+    message: { type: 'string' },
+    statusCode: { type: 'integer' },
+  },
+  type: 'object',
 };
 
 export const NotFoundSchema = Type.Object({
-    error: Type.String(),
-    message: Type.String(),
-    statusCode: Type.Integer()
+  error: Type.String(),
+  message: Type.String(),
+  statusCode: Type.Integer(),
 });
 
 export interface NotFoundResponse {
-    error: string;
-    message: string;
-    statusCode: number;
+  error: string;
+  message: string;
+  statusCode: number;
 }

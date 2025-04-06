@@ -8,9 +8,9 @@ describe('server test', () => {
   let fastify:FastifyInstance;
 
   beforeAll(async () => {
-    fastify = build({ logger: pino({ level: LOGGER_LEVEL }) });
+    fastify = await build({ logger: pino({ level: LOGGER_LEVEL }) });
     await fastify.ready();
-    await fastify.listen(3333, HOST);
+    await fastify.listen({ port: 3335, host: HOST });
   });
 
   afterAll(() => {

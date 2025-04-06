@@ -1,6 +1,6 @@
 import * as dotenvFlow from 'dotenv-flow';
 dotenvFlow.config({
-    default_node_env: process.env.NODE_ENV,
+  default_node_env: process.env.NODE_ENV,
 });
 
 export const HOST = process.env.SERVICE_HOST ? process.env.SERVICE_HOST : '0.0.0.0';

@@ -1,8 +1,8 @@
 export const indexPageOpt = {
-    response: {
-        200: {
-            type: 'string',
-        }
+  response: {
+    200: {
+      type: 'string',
     },
-    tags: ['index']
+  },
+  tags: ['index'],
 };
