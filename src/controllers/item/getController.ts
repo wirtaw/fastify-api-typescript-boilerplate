@@ -3,12 +3,7 @@ import { FastifyReply, FastifyRequest } from 'fastify';
 import { IItem, ItemSchema } from '../../schemas/item/Item';
 import { NotFoundSchema } from '../../schemas/item/NotFound';
 
-const responseSchema = {
-  200: ItemSchema,
-  400: NotFoundSchema,
-};
-
-type ResponseBody = Static<(typeof responseSchema)['200'] | (typeof responseSchema)['400']>;
+type ResponseBody = Static<typeof ItemSchema | typeof NotFoundSchema>;
 
 import { Items } from './mock';
 

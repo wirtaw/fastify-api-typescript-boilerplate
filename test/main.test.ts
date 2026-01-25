@@ -13,8 +13,8 @@ describe('server test', () => {
     await fastify.listen({ port: 3335, host: HOST });
   });
 
-  afterAll(() => {
-    fastify.close();
+  afterAll(async () => {
+    await fastify.close();
   });
 
   describe('index page', () => {

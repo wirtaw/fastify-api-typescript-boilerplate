@@ -2,9 +2,9 @@
 
 This project provides a basic Fastify API built with TypeScript. It includes:
 
-* Type-safe routing and validation
-* Efficient JSON serialization
-* Example endpoints (GET, POST) for demonstration
+- Type-safe routing and validation
+- Efficient JSON serialization
+- Example endpoints (GET, POST) for demonstration
 
 ## Table of Contents
 
@@ -14,9 +14,9 @@ This project provides a basic Fastify API built with TypeScript. It includes:
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation 
+## Installation
 
-- Run `npm ci`
+- Run `pnpm install`
 - Create `.env.development` or copy from `.env.example`
 - Change env variables
 
@@ -24,23 +24,28 @@ This project provides a basic Fastify API built with TypeScript. It includes:
 
 ### Dev
 
-Run `npm run start:watch`
+Run `pnpm run dev:watch`
 
 ### Production
 
-Run `npm run start`
+Run `pnpm run start`
 
-### Build 
+### Build
 
-Run `npm run build`
+Run `pnpm run build`
 
 ## Support
 
-Please [open an issue](https://github.com/wirtaw/fastify-api-typescript-boilerplate/issues/new) for support.
+Please
+[open an issue](https://github.com/wirtaw/fastify-api-typescript-boilerplate/issues/new)
+for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/wirtaw/fastify-api-typescript-boilerplate/compare/).
+Please contribute using
+[Github Flow](https://guides.github.com/introduction/flow/). Create a branch,
+add commits, and
+[open a pull request](https://github.com/wirtaw/fastify-api-typescript-boilerplate/compare/).
 
 ## License
 

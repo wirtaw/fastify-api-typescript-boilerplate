@@ -12,7 +12,6 @@ wirtaw/fastify-api-typescript-boilerplate is built on the following main stack:
 - [ESLint](http://eslint.org/) – Code Review
 - [Jest](http://facebook.github.io/jest/) – Javascript Testing Framework
 - [Prettier](https://prettier.io/) – Code Review
-- [TSLint](https://github.com/palantir/tslint) – Code Review
 - [nodemon](http://nodemon.io/) – node.js Application Monitoring
 
 Full tech stack [here](/techstack.md)
@@ -32,7 +31,6 @@ wirtaw/fastify-api-typescript-boilerplate is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/830/jest.png' alt='Jest'/> [Jest](http://facebook.github.io/jest/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
-- <img width='25' height='25' src='https://img.stackshare.io/service/5561/303157.png' alt='TSLint'/> [TSLint](https://github.com/palantir/tslint) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/5577/preview.png' alt='nodemon'/> [nodemon](http://nodemon.io/) – node.js Application Monitoring
 
 Full tech stack [here](/techstack.md)
@@ -42,13 +40,19 @@ Full tech stack [here](/techstack.md)
 <div align="center">
 
 # Tech Stack File
-![](https://img.stackshare.io/repo.svg "repo") [wirtaw/fastify-api-typescript-boilerplate](https://github.com/wirtaw/fastify-api-typescript-boilerplate)![](https://img.stackshare.io/public_badge.svg "public")
+
+![](https://img.stackshare.io/repo.svg "repo")
+[wirtaw/fastify-api-typescript-boilerplate](https://github.com/wirtaw/fastify-api-typescript-boilerplate)
+![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|23<br/>Tools used|02/29/24 <br/>Report generated|
-|------|------|
+
+| 23<br/>Tools used | 02/29/24 <br/>Report generated |
+| ----------------- | ------------------------------ |
+
 </div>
 
 ## <img src='https://img.stackshare.io/languages.svg'/> Languages (2)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'>
@@ -70,6 +74,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/frameworks.svg'/> Frameworks (2)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/7609/24939410.png' alt='Fastify'>
@@ -91,6 +96,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/devops.svg'/> DevOps (7)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'>
@@ -151,27 +157,27 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
-
 ## <img src='https://img.stackshare.io/group.svg' /> Open source packages (12)</h2>
 
 ## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (12)
 
-|NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
-|:------|:------|:------|:------|:------|:------|
-|[@types/jest](https://www.npmjs.com/@types/jest)|v27.5.2|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[@types/node](https://www.npmjs.com/@types/node)|v17.0.45|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[@types/pino](https://www.npmjs.com/@types/pino)|v7.0.5|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[@typescript-eslint/eslint-plugin](https://www.npmjs.com/@typescript-eslint/eslint-plugin)|v5.62.0|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[@typescript-eslint/parser](https://www.npmjs.com/@typescript-eslint/parser)|v5.62.0|10/08/23|Vladimir Poplavskij |BSD-2-Clause|N/A|
-|[eslint-config-prettier](https://www.npmjs.com/eslint-config-prettier)|v8.10.0|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[eslint-plugin-prettier](https://www.npmjs.com/eslint-plugin-prettier)|v4.2.1|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[pino](https://www.npmjs.com/pino)|v6.14.0|06/24/23|Vladimir Poplavskij |MIT|N/A|
-|[ts-jest](https://www.npmjs.com/ts-jest)|v27.1.5|06/24/23|Vladimir Poplavskij |MIT|N/A|
-|[ts-node](https://www.npmjs.com/ts-node)|v10.9.1|10/08/23|Vladimir Poplavskij |MIT|N/A|
-|[tslint-config-prettier](https://www.npmjs.com/tslint-config-prettier)|v1.18.0|10/08/23|Vladimir Poplavskij |MIT|N/A|
+| NAME                                                                                       | VERSION  | LAST UPDATED | LAST UPDATED BY     | LICENSE      | VULNERABILITIES |
+| :----------------------------------------------------------------------------------------- | :------- | :----------- | :------------------ | :----------- | :-------------- |
+| [@types/jest](https://www.npmjs.com/@types/jest)                                           | v27.5.2  | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [@types/node](https://www.npmjs.com/@types/node)                                           | v17.0.45 | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [@types/pino](https://www.npmjs.com/@types/pino)                                           | v7.0.5   | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [@typescript-eslint/eslint-plugin](https://www.npmjs.com/@typescript-eslint/eslint-plugin) | v5.62.0  | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [@typescript-eslint/parser](https://www.npmjs.com/@typescript-eslint/parser)               | v5.62.0  | 10/08/23     | Vladimir Poplavskij | BSD-2-Clause | N/A             |
+| [eslint-config-prettier](https://www.npmjs.com/eslint-config-prettier)                     | v8.10.0  | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [eslint-plugin-prettier](https://www.npmjs.com/eslint-plugin-prettier)                     | v4.2.1   | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [pino](https://www.npmjs.com/pino)                                                         | v6.14.0  | 06/24/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [ts-jest](https://www.npmjs.com/ts-jest)                                                   | v27.1.5  | 06/24/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [ts-node](https://www.npmjs.com/ts-node)                                                   | v10.9.1  | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
+| [tslint-config-prettier](https://www.npmjs.com/tslint-config-prettier)                     | v1.18.0  | 10/08/23     | Vladimir Poplavskij | MIT          | N/A             |
 
 <br/>
 <div align='center'>
 
 Generated via [Stack File](https://github.com/marketplace/stack-file)
+
 </div>

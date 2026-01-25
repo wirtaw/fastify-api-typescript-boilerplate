@@ -10,13 +10,18 @@ export const start = async () => {
   } catch (err) {
     let errMessage: string = '';
 
-    if (err && typeof err === 'object' && err !== null && 'message' in err && typeof err.message === 'string') {
+    if (err instanceof Error) {
       errMessage = err.message;
-    } else if (err && typeof err === 'string') {
+    } else if (typeof err === 'string') {
       errMessage = err;
     }
 
     throw new Error(errMessage);
   }
 };
-start();
+if (require.main === module) {
+  start().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

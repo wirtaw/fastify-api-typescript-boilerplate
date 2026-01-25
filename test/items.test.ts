@@ -14,8 +14,8 @@ describe('API items route test', () => {
         await fastify.listen({ port: 3334, host: HOST });
     });
 
-    afterAll(() => {
-        fastify.close();
+    afterAll(async () => {
+        await fastify.close();
     });
 
     describe('items list page', () => {

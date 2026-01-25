@@ -16,7 +16,7 @@ import { HOST, PORT, LOGGER_LEVEL } from '../config';
 
 import routes from '../routes/routes';
 
-async function build(opt: {}) {
+async function build(opt: Record<string, unknown>) {
   const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({
     ...opt,
     logger: {
@@ -53,7 +53,7 @@ async function build(opt: {}) {
     routePrefix: '/documentation',
   });
 
-  server.register(fastifyRoutes);
+  await server.register(fastifyRoutes);
 
   routes.forEach(
     (
